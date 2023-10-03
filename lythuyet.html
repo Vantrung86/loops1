@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Vong lap:
+        -Giup thuc hien nhung lenh lap di lap lai theo tuan tu
+        I-for
+            Gom 3 phan:
+                +Gia tri khoi tao
+                +Dk lap
+                +Buoc nhay
+            Cac phan ngan cach nhau boi dau ";"
+            cach thuc thi vong for:
+                +Lay gia tri khoi tao so sanh dk,
+                +Neu dk true thi thuc thi
+                +Xong thuc thi quay ve buoc nhay
+                +Neu dk sai dung chuong trinh
+        Cac tu khoa lenh hay dung trong for
+            1. continue
+            - Bo qua lan lap
+            2. break
+            - Khi gap break thi thoat khoi vong lap(thoát khỏi vòng lặp chứa nó)
+        ***************************
+        For-lồng(for lồng for)
+        II-While
+        Có thể chạy 1 lần hoặc ko chạy
+        cách thực thi: 
+            đầu tiên kiểm tra đk, nếu đk đúng thì thực thi,đk sai thì dừng
+        III-do-while
+    -->
+    <script>
+        // for(let i=0; i<5; i++){
+        //     //phan thuc thi
+        // }
+        // // in ra cac so chan tu 0-10
+        // for(let i=0; i<10; i+=2){
+        //     console.log(i);
+        //     //phan thuc thi
+        // }
+        // for(let i=0; i<10; i++){
+        //     if(i%2==0){
+        //         console.log(i);
+        //     }
+        //     //phan thuc thi
+        // }
+        
+
+        //While
+        // let i=0;
+        // while(i<10){
+        //     //thuc thi
+        //     console.log(i);
+        //     i++;
+        // }
+        // console.log(i);
+
+        //BT: yeu cau nguoi dung nhap vao so lon hon 5
+        //neu nhap so be hon 5 yeu cau nhap lai
+        //neu dung thi thoi ko nhap nua
+        // let number = +prompt("Nhap so lon hon 5");
+        // while(number<5){
+        //     number = +prompt("so chua dung nhap lai")
+        // }
+        // console.log("number ",number);
+
+
+        //do-while
+        let i=0;
+        do{
+            console.log(i);
+            i++
+            //thực thi sau đó mới kt đk
+            //chạy ít nhất 1 lần
+        }while(i<10)
+        
+
+        let maThe = "2526";
+        let number = prompt("Moi ban nhap ma the");
+        let count = 0;
+        do{
+            if(maThe == number){
+                break;
+            }else{
+                number = prompt("Moi ban nhap lai");
+                count++;
+            }
+        }while(count<3)
+    </script>
+</body>
+</html>

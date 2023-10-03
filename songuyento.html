@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //kiểm tra số nhập vào có phải là số nguyên tố ko?
+        // let number = +prompt("Nhap so can kt");
+        // let count =0;
+        // for(let i=1; i<=number; i++){
+        //     if(number%i == 0){
+        //         count++;
+        //     }
+        // }
+        // if(count==2){
+        //     console.log(`${number} la so nguyen to`);
+        // }else{
+        //     console.log(`${number} khong phai so nguyen to`);
+        // }
+
+
+        //:in ra các số nguyên tố nhỏ hơn số nhập vào
+        let number = +prompt("Nhap so can kt");
+        let n=0;
+        while (n<number) {
+            let count=0;
+            for(let i=1; i<=n; i++){
+                if(n%i==0){
+                    count++;
+                }
+            }
+            if(count==2){
+                console.log(`${n} la so nguyen to`);
+            }
+            n++;
+        }
+
+    </script>
+</body>
+</html>
